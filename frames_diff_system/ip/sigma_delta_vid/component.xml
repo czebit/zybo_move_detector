@@ -1,0 +1,1608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>sigma_delta</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>S_AXIS_FRAME</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXIS_FRAME_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXIS_FRAME_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXIS_FRAME_tdata</spirit:name>
+            <spirit:vector>
+              <spirit:left spirit:format="long">7</spirit:left>
+              <spirit:right spirit:format="long">0</spirit:right>
+            </spirit:vector>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXIS_FRAME_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TUSER</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXIS_FRAME_tuser</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>HAS_TREADY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_FRAME.HAS_TREADY">1</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TSTRB</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_FRAME.HAS_TSTRB">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TKEEP</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_FRAME.HAS_TKEEP">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TLAST</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_FRAME.HAS_TLAST">1</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TUSER_WIDTH</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_FRAME.TUSER_WIDTH">1</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TID_WIDTH</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_FRAME.TID_WIDTH">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TDEST_WIDTH</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_FRAME.TDEST_WIDTH">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TDATA_NUM_BYTES</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_FRAME.TDATA_NUM_BYTES">1</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_FRAME.LAYERED_METADATA">undef</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M_AXIS_VM</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXIS_VM_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXIS_VM_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXIS_VM_tdata</spirit:name>
+            <spirit:vector>
+              <spirit:left spirit:format="long">15</spirit:left>
+              <spirit:right spirit:format="long">0</spirit:right>
+            </spirit:vector>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXIS_VM_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TUSER</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXIS_VM_tuser</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>TDATA_NUM_BYTES</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_VM.TDATA_NUM_BYTES">2</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TDEST_WIDTH</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_VM.TDEST_WIDTH">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TID_WIDTH</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_VM.TID_WIDTH">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TUSER_WIDTH</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_VM.TUSER_WIDTH">1</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TREADY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_VM.HAS_TREADY">1</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TSTRB</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_VM.HAS_TSTRB">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TKEEP</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_VM.HAS_TKEEP">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TLAST</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_VM.HAS_TLAST">1</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_VM.LAYERED_METADATA">undef</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M_AXIS_MASK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXIS_MASK_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXIS_MASK_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXIS_MASK_tdata</spirit:name>
+            <spirit:vector>
+              <spirit:left spirit:format="long">7</spirit:left>
+              <spirit:right spirit:format="long">0</spirit:right>
+            </spirit:vector>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXIS_MASK_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TUSER</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXIS_MASK_tuser</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>TDATA_NUM_BYTES</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_MASK.TDATA_NUM_BYTES">1</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TDEST_WIDTH</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_MASK.TDEST_WIDTH">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TID_WIDTH</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_MASK.TID_WIDTH">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TUSER_WIDTH</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_MASK.TUSER_WIDTH">1</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TREADY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_MASK.HAS_TREADY">1</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TSTRB</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_MASK.HAS_TSTRB">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TKEEP</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_MASK.HAS_TKEEP">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TLAST</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_MASK.HAS_TLAST">1</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_MASK.LAYERED_METADATA">undef</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S_AXIS_VM</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXIS_VM_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXIS_VM_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXIS_VM_tdata</spirit:name>
+            <spirit:vector>
+              <spirit:left spirit:format="long">15</spirit:left>
+              <spirit:right spirit:format="long">0</spirit:right>
+            </spirit:vector>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXIS_VM_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TUSER</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXIS_VM_tuser</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>TDATA_NUM_BYTES</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_VM.TDATA_NUM_BYTES">2</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TDEST_WIDTH</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_VM.TDEST_WIDTH">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TID_WIDTH</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_VM.TID_WIDTH">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TUSER_WIDTH</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_VM.TUSER_WIDTH">1</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TREADY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_VM.HAS_TREADY">1</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TSTRB</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_VM.HAS_TSTRB">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TKEEP</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_VM.HAS_TKEEP">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TLAST</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_VM.HAS_TLAST">1</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_VM.LAYERED_METADATA">undef</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>RST.RESET_N</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>reset_n</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.RST.RESET_N.POLARITY">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>CLK.CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.CLK.PHASE">0.0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.CLK.ASSOCIATED_RESET">reset_n</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>RST.S_AXIS_FRAME_ARSTN</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_frame_arstn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.RST.S_AXIS_FRAME_ARSTN.POLARITY">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>RST.S_AXIS_VM_ARSTN</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_vm_arstn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.RST.S_AXIS_VM_ARSTN.POLARITY">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>CLK.S_AXIS_VM_ACLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_vm_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.S_AXIS_VM_ACLK.PHASE">0.0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.S_AXIS_VM_ACLK.ASSOCIATED_BUSIF">S_AXIS_VM</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.S_AXIS_VM_ACLK.ASSOCIATED_RESET">s_axis_vm_arstn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>CLK.S_AXIS_FRAME_ACLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_frame_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.S_AXIS_FRAME_ACLK.PHASE">0.0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.S_AXIS_FRAME_ACLK.ASSOCIATED_BUSIF">S_AXIS_FRAME</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.S_AXIS_FRAME_ACLK.ASSOCIATED_RESET">s_axis_frame_arstn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>RST.M_AXIS_VM_ARSTN</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_axis_vm_arstn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.RST.M_AXIS_VM_ARSTN.POLARITY">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>CLK.M_AXIS_VM_ACLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_axis_vm_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.M_AXIS_VM_ACLK.PHASE">0.0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.M_AXIS_VM_ACLK.ASSOCIATED_BUSIF">M_AXIS_VM</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.M_AXIS_VM_ACLK.ASSOCIATED_RESET">m_axis_vm_arstn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>RST.M_AXIS_MASK_ARSTN</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_axis_mask_arstn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.RST.M_AXIS_MASK_ARSTN.POLARITY">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>CLK.M_AXIS_MASK_ACLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_axis_mask_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.M_AXIS_MASK_ACLK.PHASE">0.0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.M_AXIS_MASK_ACLK.ASSOCIATED_BUSIF">M_AXIS_MASK</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.M_AXIS_MASK_ACLK.ASSOCIATED_RESET">m_axis_mask_arstn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>sigma_delta</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_ip_axis_clock_converter_1_1__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_user_m_axis_int_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_user_s_axis_int_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>1ed75976</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>sigma_delta</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_axis_clock_converter_1_1__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_m_axis_int_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_s_axis_int_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>84bc6625</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>4315e461</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>M_AXIS_MASK_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>M_AXIS_MASK_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>M_AXIS_MASK_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>M_AXIS_MASK_tuser</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>M_AXIS_MASK_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>M_AXIS_VM_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>M_AXIS_VM_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>M_AXIS_VM_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>M_AXIS_VM_tuser</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>M_AXIS_VM_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXIS_FRAME_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXIS_FRAME_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXIS_FRAME_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXIS_FRAME_tuser</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXIS_FRAME_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXIS_VM_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXIS_VM_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXIS_VM_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXIS_VM_tuser</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXIS_VM_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_axis_mask_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_axis_mask_arstn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_axis_vm_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_axis_vm_arstn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>reset_n</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_frame_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_frame_arstn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_vm_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_vm_arstn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/sigma_delta_ooc.xdc</spirit:name>
+        <spirit:userFileType>xdc</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>SCOPED_TO_REF_sigma_delta</spirit:userFileType>
+        <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigma_delta_s_axis_int_0_1/sigma_delta_s_axis_int_0_1.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_s_axis_int_vm/sigma_delta_s_axis_int_0_1</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigma_delta_s_axis_int_0_0/sigma_delta_s_axis_int_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_s_axis_int_frame/sigma_delta_s_axis_int_0_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigma_delta_m_axis_int_0_1/sigma_delta_m_axis_int_0_1.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_m_axis_int_vm/sigma_delta_m_axis_int_0_1</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigma_delta_m_axis_int_0_0/sigma_delta_m_axis_int_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_m_axis_int_mask/sigma_delta_m_axis_int_0_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigma_delta_axis_clock_converter_2_0/sigma_delta_axis_clock_converter_2_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axis_clock_conv_out_vm/sigma_delta_axis_clock_converter_2_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigma_delta_axis_clock_converter_3_0/sigma_delta_axis_clock_converter_3_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axis_clock_conv_mask/sigma_delta_axis_clock_converter_3_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigma_delta_axis_clock_converter_0_0/sigma_delta_axis_clock_converter_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axis_clock_conv_in_vm/sigma_delta_axis_clock_converter_0_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigma_delta_axis_clock_converter_1_0/sigma_delta_axis_clock_converter_1_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axis_clock_conv_frame/sigma_delta_axis_clock_converter_1_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/fifo.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sd_proc_element.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sd_proc_wrapper.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigma_delta_sd_proc_wrapper_0_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigma_delta.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_b2daf950</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_axis_clock_converter_1_1__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xsi:type="xilinx:componentRefType" xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axis_clock_converter" xilinx:version="1.1">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_user_m_axis_int_1_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="m_axis_int" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_user_s_axis_int_1_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="s_axis_int" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/sigma_delta_s_axis_int_0_1/sigma_delta_s_axis_int_0_1.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_s_axis_int_vm/sigma_delta_s_axis_int_0_1</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigma_delta_s_axis_int_0_0/sigma_delta_s_axis_int_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_s_axis_int_frame/sigma_delta_s_axis_int_0_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigma_delta_m_axis_int_0_1/sigma_delta_m_axis_int_0_1.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_m_axis_int_vm/sigma_delta_m_axis_int_0_1</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigma_delta_m_axis_int_0_0/sigma_delta_m_axis_int_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_m_axis_int_mask/sigma_delta_m_axis_int_0_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigma_delta_axis_clock_converter_2_0/sigma_delta_axis_clock_converter_2_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axis_clock_conv_out_vm/sigma_delta_axis_clock_converter_2_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigma_delta_axis_clock_converter_3_0/sigma_delta_axis_clock_converter_3_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axis_clock_conv_mask/sigma_delta_axis_clock_converter_3_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigma_delta_axis_clock_converter_0_0/sigma_delta_axis_clock_converter_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axis_clock_conv_in_vm/sigma_delta_axis_clock_converter_0_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigma_delta_axis_clock_converter_1_0/sigma_delta_axis_clock_converter_1_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axis_clock_conv_frame/sigma_delta_axis_clock_converter_1_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/fifo.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sd_proc_element.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sd_proc_wrapper.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigma_delta_sd_proc_wrapper_0_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>sim/sigma_delta.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_axis_clock_converter_1_1__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axis_clock_converter" xilinx:version="1.1">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_m_axis_int_1_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="m_axis_int" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_s_axis_int_1_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="s_axis_int" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/sigma_delta_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_4315e461</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>sigma_delta_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">sigma_delta_v1_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>N</spirit:name>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.N">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>T</spirit:name>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.T">5</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">zynq</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>sigma_delta_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>IPI</xilinx:definitionSource>
+      <xilinx:xpmLibraries>
+        <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
+        <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
+      </xilinx:xpmLibraries>
+      <xilinx:coreRevision>13</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2022-09-11T19:32:39Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ed26cdc_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@be017ed_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@209040b6_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3bee03fc_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6fbd75ce_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@467f2313_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1f506645_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@518d767b_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d83462a_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4eeec5f_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3e20a01e_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3afe6645_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@29b975a_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@31f05f05_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4511ccfc_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1f7eeaf1_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@47999cf4_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7579e69a_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@78a6e580_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7a09eaaf_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5aa909e2_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@43011d_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1888cd_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@44abfb86_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7dbb49eb_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@203fba60_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7d677875_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@9182a70_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5c4bae35_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6b1fd826_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@587f79c7_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@26c4f2ef_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5edb44e9_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@232dd3c2_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@12abd57d_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@227b6582_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6285f49a_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1d42f825_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3451403_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@67299a90_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7dada5e1_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6263e966_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@37743a17_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@64fd2ed0_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4e6ea240_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@14c7fe36_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@66ace689_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@52201206_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@38c66d3e_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7fd99c15_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3c34d4f4_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@742ebfb6_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1ed5b2f1_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f049423_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d615528_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@72aefe21_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@76ac37c5_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@72b67382_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@413682d9_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@69d6c54_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2c57f99a_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@42690450_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@aacb945_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7dc5e085_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e3a6f5d_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@15d0388_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@23bcf110_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@77d8210e_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4f025392_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3b91319a_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@712b59c8_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7f1bbeee_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2e6411e4_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@23c25a2b_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7d77fe35_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@20cce278_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@109d35e1_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2df7b95e_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@46991119_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4383a712_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@c0c5b44_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@395a23ff_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@134f6c22_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7db0b765_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@369a72df_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d23b59d_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@27d34e68_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@23d5d8c4_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a544d36_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1e7e4b46_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@8a7ed83_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1354297e_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4584351a_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3f720bfa_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@10dbff73_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4b4b5dfc_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1fbfd67b_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6f1ef09a_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@667c4656_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@19afe957_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6d8a4c8b_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1e87829f_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3c483e37_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3dd4030f_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@82faead_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4932cf3f_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2e373b49_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@b6ccc74_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@434d92f2_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4663e4b5_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7210caf6_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@360c0ebd_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@11ed161b_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5334ec35_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@21fa592d_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5fb0e85d_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@229e6119_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3026b499_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2aaa9be9_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@41f6f50d_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@709d952_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@8998544_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2d5cb90b_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5e22e04d_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5eb75e4d_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3b6ba41a_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a7e0c56_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4c876fbb_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@53014e34_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@548f445a_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4ac1000d_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2c6f3cf9_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@a938dba_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@53a818c_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@320b0af5_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5114dad8_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5dc191ef_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@27343b4d_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@47a11d9_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6d2d0050_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3ab4f7b_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ce7ddda_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5cee71bd_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@28f5f3d1_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a725b60_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2e49a08b_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@66b55090_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@27cdd29e_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@fa50cc5_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@785ac0d2_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@112b295_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ef24e3b_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7611c236_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a4f7190_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@70aaf59b_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2a7498b3_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4cbe902a_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@290b37f_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@607cd2d5_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1d2a7de3_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@61b0c490_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@504f1f37_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2e427ce4_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7581ee5d_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3b83c734_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@98c6d22_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@367c9997_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5c7c097c_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@747562df_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@f2118e4_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3597c811_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1f4f1246_ARCHIVE_LOCATION">c:/FPGA/sigma_delta_vid</xilinx:tag>
+      </xilinx:tags>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.M_AXIS_MASK_ACLK.ASSOCIATED_BUSIF" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.M_AXIS_MASK_ACLK.ASSOCIATED_RESET" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.M_AXIS_VM_ACLK.ASSOCIATED_BUSIF" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.M_AXIS_VM_ACLK.ASSOCIATED_RESET" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.S_AXIS_FRAME_ACLK.ASSOCIATED_BUSIF" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.S_AXIS_FRAME_ACLK.ASSOCIATED_RESET" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.S_AXIS_VM_ACLK.ASSOCIATED_BUSIF" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.S_AXIS_VM_ACLK.ASSOCIATED_RESET" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_MASK.HAS_TKEEP" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_MASK.HAS_TLAST" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_MASK.HAS_TREADY" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_MASK.HAS_TSTRB" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_MASK.LAYERED_METADATA" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_MASK.TDATA_NUM_BYTES" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_MASK.TDEST_WIDTH" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_MASK.TID_WIDTH" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_MASK.TUSER_WIDTH" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_VM.HAS_TKEEP" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_VM.HAS_TLAST" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_VM.HAS_TREADY" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_VM.HAS_TSTRB" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_VM.LAYERED_METADATA" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_VM.TDATA_NUM_BYTES" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_VM.TDEST_WIDTH" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_VM.TID_WIDTH" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_VM.TUSER_WIDTH" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_FRAME.HAS_TKEEP" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_FRAME.HAS_TLAST" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_FRAME.HAS_TREADY" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_FRAME.HAS_TSTRB" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_FRAME.LAYERED_METADATA" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_FRAME.TDATA_NUM_BYTES" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_FRAME.TDEST_WIDTH" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_FRAME.TID_WIDTH" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_FRAME.TUSER_WIDTH" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_VM.HAS_TKEEP" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_VM.HAS_TLAST" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_VM.HAS_TREADY" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_VM.HAS_TSTRB" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_VM.LAYERED_METADATA" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_VM.TDATA_NUM_BYTES" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_VM.TDEST_WIDTH" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_VM.TID_WIDTH" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_VM.TUSER_WIDTH" xilinx:valueSource="user"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2021.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="c9af24ff"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a842a9b9"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="131e7e2e"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="e7613aac"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

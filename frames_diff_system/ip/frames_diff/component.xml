@@ -1,0 +1,1802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>frames_diff</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>S00_AXIS</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_tdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_tstrb</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TUSER</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_tuser</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXIS.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S01_AXIS</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s01_axis_tdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s01_axis_tstrb</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s01_axis_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s01_axis_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s01_axis_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TUSER</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s01_axis_tuser</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S01_AXIS.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M00_AXIS</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tstrb</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TUSER</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tuser</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>aresetn</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.ARESETN.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>aclk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.ACLK.ASSOCIATED_BUSIF">S00_AXIS:S01_AXIS:M00_AXIS</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.ACLK.ASSOCIATED_RESET">aresetn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsynthesis</spirit:name>
+        <spirit:displayName>VHDL Synthesis</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>frames_diff</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>2477f8d3</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlbehavioralsimulation</spirit:name>
+        <spirit:displayName>VHDL Simulation</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>frames_diff</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>2477f8d3</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>6e2fb6d0</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>bd_tcl</spirit:name>
+        <spirit:displayName>Block Diagram</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:block.diagram</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>bd_tcl_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>16328387</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXIS_TDATA_WIDTH&apos;)) - 1)">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_tuser</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXIS_TUSER_WIDTH&apos;)) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_tstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXIS_TDATA_WIDTH&apos;)) / 8) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s01_axis_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s01_axis_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S01_AXIS_TDATA_WIDTH&apos;)) - 1)">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s01_axis_tuser</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S01_AXIS_TUSER_WIDTH&apos;)) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s01_axis_tstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S01_AXIS_TDATA_WIDTH&apos;)) / 8) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s01_axis_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s01_axis_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXIS_TDATA_WIDTH&apos;)) - 1)">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tuser</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXIS_TUSER_WIDTH&apos;)) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXIS_TDATA_WIDTH&apos;)) / 8) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>C_S01_AXIS_TDATA_WIDTH</spirit:name>
+        <spirit:displayName>C S01 AXIS TDATA WIDTH</spirit:displayName>
+        <spirit:description>AXI4Stream sink: Data Width</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S01_AXIS_TDATA_WIDTH" spirit:order="3" spirit:rangeType="long">8</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S00_AXIS_TDATA_WIDTH</spirit:name>
+        <spirit:displayName>C S00 AXIS TDATA WIDTH</spirit:displayName>
+        <spirit:description>AXI4Stream sink: Data Width</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXIS_TDATA_WIDTH" spirit:order="4" spirit:rangeType="long">8</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M00_AXIS_TDATA_WIDTH</spirit:name>
+        <spirit:displayName>C M00 AXIS TDATA WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXIS address bus. The slave accepts the read and write addresses of width C_M_AXIS_TDATA_WIDTH.</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXIS_TDATA_WIDTH" spirit:order="5" spirit:rangeType="long">8</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S00_AXIS_TUSER_WIDTH</spirit:name>
+        <spirit:displayName>C S00 Axis Tuser Width</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXIS_TUSER_WIDTH">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S01_AXIS_TUSER_WIDTH</spirit:name>
+        <spirit:displayName>C S01 Axis Tuser Width</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S01_AXIS_TUSER_WIDTH">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M00_AXIS_TUSER_WIDTH</spirit:name>
+        <spirit:displayName>C M00 Axis Tuser Width</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXIS_TUSER_WIDTH">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S00_AXIS_FIFO_DEPTH</spirit:name>
+        <spirit:displayName>C S00 Axis Fifo Depth</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXIS_FIFO_DEPTH">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="boolean">
+        <spirit:name>C_S00_AXIS_DEBUG</spirit:name>
+        <spirit:displayName>C S00 Axis Debug</spirit:displayName>
+        <spirit:value spirit:format="bool" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXIS_DEBUG">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S01_AXIS_FIFO_DEPTH</spirit:name>
+        <spirit:displayName>C S01 Axis Fifo Depth</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S01_AXIS_FIFO_DEPTH">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="boolean">
+        <spirit:name>C_S01_AXIS_DEBUG</spirit:name>
+        <spirit:displayName>C S01 Axis Debug</spirit:displayName>
+        <spirit:value spirit:format="bool" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S01_AXIS_DEBUG">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M00_AXIS_FIFO_DEPTH</spirit:name>
+        <spirit:displayName>C M00 Axis Fifo Depth</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXIS_FIFO_DEPTH">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="boolean">
+        <spirit:name>C_M00_AXIS_DEBUG</spirit:name>
+        <spirit:displayName>C M00 Axis Debug</spirit:displayName>
+        <spirit:value spirit:format="bool" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXIS_DEBUG">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="boolean">
+        <spirit:name>C_PROC_FIFO_DEBUG</spirit:name>
+        <spirit:displayName>C Proc Fifo Debug</spirit:displayName>
+        <spirit:value spirit:format="bool" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROC_FIFO_DEBUG">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="boolean">
+        <spirit:name>C_PROC_LOGIC_DEBUG</spirit:name>
+        <spirit:displayName>C Proc Logic Debug</spirit:displayName>
+        <spirit:value spirit:format="bool" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROC_LOGIC_DEBUG">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PROC_DIFF_THRESHOLD</spirit:name>
+        <spirit:displayName>C Proc Diff Threshold</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROC_DIFF_THRESHOLD">3</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_6fc15197</spirit:name>
+      <spirit:enumeration>32</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>hdl/fifo.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/frames_diff_M_AXIS.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/video_subtractor.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/frames_diff_S_AXIS.vhd</spirit:name>
+        <spirit:userFileType>vhdlSource-2008</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/frames_diff.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_e5c25b1e</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>hdl/fifo.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/frames_diff_M_AXIS.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/video_subtractor.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/frames_diff_S_AXIS.vhd</spirit:name>
+        <spirit:userFileType>vhdlSource-2008</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/frames_diff.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/frames_diff_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_6e2fb6d0</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>bd_tcl_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>bd/bd.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>Outputs difference in video frames</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>C_S01_AXIS_TDATA_WIDTH</spirit:name>
+      <spirit:displayName>S01 AXIS TDATA WIDTH</spirit:displayName>
+      <spirit:description>AXI4Stream sink: Data Width</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S01_AXIS_TDATA_WIDTH" spirit:order="3">8</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXIS_TDATA_WIDTH</spirit:name>
+      <spirit:displayName>S00 AXIS TDATA WIDTH</spirit:displayName>
+      <spirit:description>AXI4Stream sink: Data Width</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXIS_TDATA_WIDTH" spirit:order="4">8</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXIS_TDATA_WIDTH</spirit:name>
+      <spirit:displayName>M00 AXIS TDATA WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXIS address bus. The slave accepts the read and write addresses of width C_M_AXIS_TDATA_WIDTH.</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXIS_TDATA_WIDTH" spirit:order="5">8</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">frames_diff_v1_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXIS_TUSER_WIDTH</spirit:name>
+      <spirit:displayName>S00 Axis Tuser Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXIS_TUSER_WIDTH">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S01_AXIS_TUSER_WIDTH</spirit:name>
+      <spirit:displayName>S01 Axis Tuser Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S01_AXIS_TUSER_WIDTH">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXIS_TUSER_WIDTH</spirit:name>
+      <spirit:displayName>M00 Axis Tuser Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXIS_TUSER_WIDTH">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXIS_FIFO_DEPTH</spirit:name>
+      <spirit:displayName>S00 Axis Fifo Depth</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXIS_FIFO_DEPTH">32</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXIS_DEBUG</spirit:name>
+      <spirit:displayName>S00 Axis Debug</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXIS_DEBUG">TRUE</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S01_AXIS_FIFO_DEPTH</spirit:name>
+      <spirit:displayName>S01 Axis Fifo Depth</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S01_AXIS_FIFO_DEPTH">32</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S01_AXIS_DEBUG</spirit:name>
+      <spirit:displayName>S01 Axis Debug</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S01_AXIS_DEBUG">TRUE</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXIS_FIFO_DEPTH</spirit:name>
+      <spirit:displayName>M00 Axis Fifo Depth</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXIS_FIFO_DEPTH">32</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXIS_DEBUG</spirit:name>
+      <spirit:displayName>M00 Axis Debug</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXIS_DEBUG">TRUE</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROC_FIFO_DEBUG</spirit:name>
+      <spirit:displayName>Proc Fifo Debug</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROC_FIFO_DEBUG">TRUE</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROC_LOGIC_DEBUG</spirit:name>
+      <spirit:displayName>Proc Logic Debug</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROC_LOGIC_DEBUG">TRUE</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROC_DIFF_THRESHOLD</spirit:name>
+      <spirit:displayName>Proc Diff Threshold</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROC_DIFF_THRESHOLD">3</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">zynq</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>frames_diff</xilinx:displayName>
+      <xilinx:autoFamilySupportLevel>level_0</xilinx:autoFamilySupportLevel>
+      <xilinx:coreRevision>64</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2022-09-20T15:17:34Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@21ea222d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4901f5c7_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@79314425_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@cfa4ba2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@24d19317_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7c838a62_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4086f44d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@423ccfbd_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ae2149f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@507b1c47_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@236212e8_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@58587952_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6711ae4f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@17d9fc65_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5b21dabf_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@38c9cf48_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4392ab42_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1e1ea6e7_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7d46f270_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1971f92f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@556bb08f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@131a173e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@13b2e979_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@22fa1eed_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3231d88a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d29decf_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@577d8b66_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@38c0d874_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7f05aa0b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@781172a2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@735a8c6a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@61431c9d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4151005f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@15d0d383_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@20e8002c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2d290154_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7f892d34_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@11c8dfb4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7c186824_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@567b448e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@74d9af7c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4c605be4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@70f99604_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3c2aaca8_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3933d2a4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6afc21d4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@48f8345a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6ab23df8_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3ef7d4bb_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@54619f64_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1a5f494a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4ac07a9b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7932b0a4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@b5374b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@eeff7a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@318c3c2d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7cf2280f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@69fae7a2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2511e107_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2eee00ab_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@59c2b8a2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@292b178d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@29a96386_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7934a6e9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1432aa95_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@706e1272_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@191468a4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5f1d27e9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@26117bab_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@b818165_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6f73746f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1ed02165_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7c8111a8_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6c738f0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3a8a21ed_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@70f1b8c7_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@af9f84c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4027a37e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6f7e60f5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@131468b3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@34dbdea2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@56d43edf_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@40923226_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4312b080_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@28d0ea33_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@19c95b4c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@587f3d70_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5dfea579_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f3fc915_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4c37e6eb_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@479445dc_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7418ac81_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4f3a19e4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@37fdbd37_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@a7b9ea2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@59d9c231_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5d372a5c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6964d5f1_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@33970813_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7c3fad30_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4ca4cd05_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5d4f9764_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4f641fa4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2679ae52_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@36eba217_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@66939372_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@179a8ceb_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@b5e04a9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@55391530_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@40eca61d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@8b3edcc_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6452d048_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2017c752_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@656b57cd_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e222d8e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@40944129_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@88c15f1_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4ce600ec_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@69bacf96_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@42b62f2c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6db553cb_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7b37df75_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@55ebd785_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@77a45c1c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@671eb672_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@46f87821_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@9723d2d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@67659acf_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@34c0e36f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@204191bf_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@181091b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1222617_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@53dc6600_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@33733107_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3bdb833c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2714cf88_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7a09609d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@18390f78_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a53660d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@76b826bb_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@384afa2f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@32c67fa_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6fa60316_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4d12d99_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@37e7fc3f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6ca86c0b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@45c07756_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5f3a7edd_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1a9e3034_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@647ee4e6_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@35fe5480_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@22464902_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@40267902_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@608eeb2b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6060c75_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@38b96ea1_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@432b1c19_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@e82f038_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7643d011_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5e866d8d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2783fb0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4b9be447_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@d8f5612_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1a1c8f74_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2018cd2d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5f8c3f88_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6a86785d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4c66d63c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@605be6c6_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2c9db2d6_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@36b91056_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4d817ccf_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3369d824_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@68f1c2a4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@42c5e47b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@79be9f3f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@200ae79a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@591e2bf2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@38576163_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@214f10d4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@43f0c356_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@649f3b3a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@663927da_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@70bb668e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6b997db5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@79e52098_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2dddf671_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2adab549_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@75b39384_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d9cd7ce_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@d874574_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4cfafa94_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@31fe4710_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2585899e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6ecf75e2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@66d85b8c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@654aab28_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a36a507_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5b687a2d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@25139d91_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7e842467_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7c992d83_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@f0c130_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7f083c98_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1fe6b184_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@480585ba_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1dc368e5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@54f3d988_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7fa83300_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5d68fec5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1a1b7ed3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2277b5cf_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@267e3ef1_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@382adc53_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1f31799_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6539dd5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6dd77eb9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@322faaf0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@779340b2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e6a6ecc_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2b34da90_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4e4a6b13_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4bf4f656_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a819799_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1734a01b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6636178_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7209326b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3670c022_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2d9ee93b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@18a632a5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@df96226_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@295e558b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@f858f88_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6c5fa92c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@fe7298c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6fa9e10a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7061943a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@56d57f54_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e52a148_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6ba93f36_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f9c8f23_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6ed458d8_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2e3dd4a3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7b58addf_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@44bcd7e9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@a2792f0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@67c9cf98_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3680d40a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@536adfd6_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1c15b590_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5d85f954_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5028532c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@27802461_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6b5054f6_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1f39d0aa_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@660195de_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@71bb6091_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3a4ddc73_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@9a88d6e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2465430a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6d015eab_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@12d31424_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@131ec789_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1e08264c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6edfc167_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6f0cfcfe_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@30528d0f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@cbe8e20_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1788925_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4d40b30c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@17fe4b42_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1aa599ce_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@17ed6c9f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@367419b9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@687d7fbd_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@70ac490f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@213886a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5df744a3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5541e02f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@680445d4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2544cf89_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@9107d85_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@47a65e8d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@8e604b1_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a433255_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3e0439c4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3303d195_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7f4b7bc_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1a48a31d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@33ff604c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@161da8f8_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3756a6a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3c10aa2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@12c2711e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@440a014_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@16e983e0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@41cad4fc_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@67619620_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@75a591da_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6b978497_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2dbffca5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@10226f6e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a1b0f70_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1f8a4720_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2660ded2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5254fdb3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@f459601_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4eca0747_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7ff4f903_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5145416a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@73023336_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1aaeea7f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5775d702_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@654c4b6d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6c06769_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3f9ea082_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@66274bf9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@21b5a269_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@15658cbc_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@65983862_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5f18894a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@29b06716_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@c6bae58_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@19f64ed6_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@25563fa2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@595e2e64_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@46567336_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3ba3b36d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6a69a056_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4f9ce8bb_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1ddd43b8_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@48dfb25c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3713ba7d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7ee8e94a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@f32bc47_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5c9a5a36_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@466a6943_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4b37a14f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@129cbc30_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@63231168_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@10c15218_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d878823_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@77c674b2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2b92ffce_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1d0573f0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@a0690af_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@401d2521_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@49712edd_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@37ef1cf_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1b88eb5b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@703bb3cb_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@104207c9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@66af9d2e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@672d8bd3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@724454e0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5d352dd1_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@75d566f1_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@45d14b5f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5c11c337_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@797feb30_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@248dbaec_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5cca3012_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@282f48cb_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7d0851e4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f99feea_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7c97b42b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4b06cadc_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a2759b9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@20780e92_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4bae392a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@733a1ffd_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@274eab32_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3afad1e5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1cef1fdf_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1869bb71_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e10047_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@51edd2b3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3c92e4ab_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@197dec53_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@31aa6f45_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3f1dcc6a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@48c1567d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7b5539a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@73703bf4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1b6e040e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@11c67ae3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7b2a09b0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@12d4fced_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2672fce8_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5b934b10_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@41cf4631_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@15da5667_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5f926a6f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6a15f284_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@51c31b36_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@190e3d0c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1fed035c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3cf9356c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@520b98ea_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@22ee549a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4989c1d9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@20a7e979_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@40c6362_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@550e9963_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1727dfd7_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4497b4e2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@31794410_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@72e792e9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@744f8667_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7072b173_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@38c36d65_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4e18317e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@203bc3b2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1fcf7949_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4b1b7f2d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4abc68d8_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2ec7f365_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@b122b81_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@312ae9d9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@671a4df6_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@e7cc35d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@11e47aa3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@13a3202f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@e271a7e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1d9e945e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@18b5858a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7c71078_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4f9ef122_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1783b6f1_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@65f7c77c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@786a1a1e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5659e462_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@466ffbc3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@407bc20c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7ec018b3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ee3dec3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@663afd05_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3cf2acca_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@54526dde_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6a3b8f94_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@146c41e4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1673323a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@45b1912e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7c8552f4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6b5d0d85_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f713212_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7dc3a12a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3fd8e8ba_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6d44c117_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@32081364_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@474bf676_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@77819b27_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@55a3edf5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d5ac70f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7dca2089_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6927b4c4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@701dbd86_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ea1b33d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ee4847d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2fd278c4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@62653f01_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@773af22b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@65f0ea6b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3dc01e0b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f0756e7_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@41481f1a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3440008b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@198f0a04_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@14e7e1ca_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6ff9d39a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@11c26a71_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@31e856d3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@37976c24_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2ac5cd45_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@234f8852_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2b7aa42e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7b99ebed_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@8f6945_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@39e92bd1_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7d4e04b4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1eabf447_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4858d660_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5c5ccba7_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@8c13a6b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1b9c30_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6291ef41_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@247ba290_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4867e5cc_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@432105c3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3b545525_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7846f353_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@548e065e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1a813076_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@753061d8_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@77867eba_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@f25f081_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@9aa4e7e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d46656d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5acb4e2f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a14b48_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5b27ca06_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@46eb96f7_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@64fdb1fc_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@62d1e55a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@78d263b6_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@32b11a35_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@26d19a9e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@72429da7_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1e941cee_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7d7b0a7a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@135a1059_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@394f78dc_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7faa3b31_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3a6368e9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7ce8495e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@cf9c77e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2ad5cd12_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7efd8c45_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7fb6c42d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@b5fbcc9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@84b1ea0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@37b6dca4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7be991bc_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7bec30d1_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2d3d07df_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5171d1c5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@17e35244_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7696cf2b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@251361c9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@26a35a96_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7033f804_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@30fbc7ef_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@35fe7b56_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@70ecd52d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@67778f0d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1465f979_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@e2e3fd_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1b5bc867_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2b3614_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@382e3b52_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@79f0c875_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@723bf521_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f24bc18_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ed2802e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@72b82189_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7e66037b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4d9a3b92_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6836ef7a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@b9188a6_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@76868066_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1eadfa0c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2b04193f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@17e7d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@20461071_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4ddc9e75_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@200f5d2a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@60ed6954_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@180cab6c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@42e421aa_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@40fd1d1f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5cdd55c5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4826524b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@29cd421c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6a6f52be_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5df65824_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6898a47d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1c2950e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@346335f9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6b9e9277_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@95136da_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1828dca2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4d02261d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@114748f6_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7b39082d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6f7b987e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2266f58_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@34ed9187_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@14dbd22e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@52117d70_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@72d78106_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1afad404_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@71346747_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3919c4e4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5711c309_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5e3f7a2e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@79ce3fcb_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3567eebf_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@a233285_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@addabf0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@b10f134_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6337d33e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4fd62eda_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5dd874e2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@40a58ee_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@27f7ebcf_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1d441066_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@59a926fc_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@64f71ca2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@76c2dce2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6ec1c8fd_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@675e5700_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1d6fdaa0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3ff72338_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@279b2482_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@58cbbe01_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@16ce0657_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2941bedc_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@168d9912_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3f38ea2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@69da53f5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@58e60c26_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@71d01c17_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3e634326_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3ddbc9cf_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@284950ee_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@720def52_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@246556ac_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6fd8d31d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@14d18acb_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@54cc1fab_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@46a5b8a6_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@39565c06_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@ccee7ae_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a8a9022_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@40d17070_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1389d488_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@55bc98eb_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2079fc5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@d9624fa_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@46f25668_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@f0b06a3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3a6c09be_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@76bb9849_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@ddf89c3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@49a35317_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@46e6e416_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@27efbc54_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@43e7f525_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d1fa1b0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@569606c7_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@572ec71d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4d572f11_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@305ca799_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3c6dbed3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@58e3064a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e26c82a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@58c87ab9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@344c98aa_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@60ded4da_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5d4a16e4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7048efc5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5f8b07a7_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7104acd_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d8135bb_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ce0ae6e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@650df7e4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4da12b71_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@799cd1b0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4f301720_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@645af878_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@47a35077_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@f97f7dc_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@57127eb1_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5f66a9d6_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3490dbb6_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7139ad35_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7b59eb56_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@410a60c8_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5adc9b74_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1bb134be_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5bd4a27c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@12403f86_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a26c3ca_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@591e5b22_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5f8015d8_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3757c5cb_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5010e263_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@fb6a966_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@15ced5e1_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@14dde_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@231a6b24_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7dd2d07d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e22ad02_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3442c1d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@129bae1_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6d0746c8_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@29bb8aa3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@232e6493_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@11b2da67_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@47c86ed1_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5015dc9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@231c5f54_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@14374e01_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4bf32b5a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@227129ed_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1922e873_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@226af8a5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@24e99a2b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@d082a8c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3ce6916_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@57163632_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@674ede26_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5e98231e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@693701a0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@111793ae_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@e1c9353_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7cd2cc8c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@34ad0bfe_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@25986796_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@19b86ca4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@646357b3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@64e1abc4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f9b38cb_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@64ce9df5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@590ed408_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7ad536c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e596078_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1ccaf275_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@192a0ffa_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3aa4fdb5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7b4c4fe_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@28e75862_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2449d4bd_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5089394b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1a920fd8_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@99be860_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@26aa43e3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7dee7a28_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@20968add_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@44011f64_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@28c13cd6_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ca668f3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@44e57205_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7e0aa4bd_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@434aafbd_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e9f1ab9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@251e7c09_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@342af777_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7c12bb99_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4745a79d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@57428310_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@65a33e3b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7c037fe9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@c8cd86a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1198980f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6be8d0fe_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@63cca1c1_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@27d08e42_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5059db6_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1cd0d91a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4be402f7_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a65e1bb_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@541452e1_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@22b271b7_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@35649070_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@760998c9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@8b0f385_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3685e6a2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@691c01cf_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a1f3799_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@16d2b908_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7b659ce9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@259b463a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5d33ba92_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@941dcb9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4e8f6f6e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6ab1422b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3f071347_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@663b1efe_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@cc3b5dc_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1d9c3e3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@596824e2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@246217fd_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@63f36192_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@28623221_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7dbd5879_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@120147d9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@b289a15_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e1c7e7a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@68aaac5f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@437f30b8_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@35417afa_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@43734752_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2fbed499_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7458ae45_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@72a405c0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3da762bf_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@77e75589_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1a0508af_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@18bbe8dd_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@24ce76f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1c84c69a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1b4c2a52_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@63edf50a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1694b969_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@619ad596_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@60d8e4d2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1ad7be06_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7251ad46_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3ee1ee32_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@8cae8b1_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@75454efa_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7d708747_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6eff4f58_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@413bb8d8_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@28cf92f9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@aa86fb7_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@425f4bfd_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1a3f2f8c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7f71f7f0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2c76d8a4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@b44e0ac_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@20e857be_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@73d749fb_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3c00d35f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1f85ac61_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1131e279_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1537a405_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@611f3254_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@799986f5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2cec612d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2b230615_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@33713997_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6b14183e_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1ab2b11a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@73a27e51_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@669d9071_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@65bd91cc_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5bf42a02_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@63447853_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@434aa15f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3dfee50a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@67fb4fc9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@12bdf2ce_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@78fd064d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@79813d1c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3e77043c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6474cb48_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@61022904_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2ca9583f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@77344a19_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@74e16d43_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4c1539c4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5dc3377f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@525d1286_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d63de76_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6dc45249_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d8e007b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3047b401_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@29183ef2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3798d831_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@47b93d4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@253231d5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2e038738_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6cf10c4d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@72340c98_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@a2380e3_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@431fbd8d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@201e6a7d_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7a71daf_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@62947f56_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@314982b0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6c23ee37_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@c0d286a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1de79be4_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2d2bcc01_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@48bb6fe0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@67525d77_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@38172cf7_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2cde57af_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@14b89fbc_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@72e41178_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@65d33fb9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7a0965ce_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@630a8f19_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3a1f4ed2_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1230c4d8_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f95134a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@c438a44_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@75d1bc5_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@724503d8_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@627824f0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@62918035_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@243c4310_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@53ae4303_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@26b5cfab_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@42a142b0_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6bf74f8a_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@270058fb_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ea817f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7d520e37_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@245c8abe_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@69c65d08_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@80da532_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@165be526_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@70fb9cd9_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@39488429_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7920adbe_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5c20501b_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@71070fb7_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@61883b67_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@57997476_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@ab56bc_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5c85d97_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@436aa07f_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2240266c_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a90068_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@331d33ce_ARCHIVE_LOCATION">c:/FPGA/frames_diff/frames_diff_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@58fe3d3b_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@320d2d3e_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@212d9707_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1b6f4761_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5fe8304f_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@26775129_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7f34f0fb_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4c6e6cec_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1362a2a7_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2a2e4979_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1e24daff_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4254e73c_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a6fe3f3_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2ddf77e6_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@760291ec_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7b0a184f_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2e624b6c_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5cfd89ca_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5e75d89b_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1e23b025_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@719236fc_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@719c368f_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2038f4da_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1df6107b_ARCHIVE_LOCATION">c:/FPGA/ip/frames_diff</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2021.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="4da8b88f"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="9fec8a29"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="63b93a40"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="138ab503"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="7bf3e29e"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

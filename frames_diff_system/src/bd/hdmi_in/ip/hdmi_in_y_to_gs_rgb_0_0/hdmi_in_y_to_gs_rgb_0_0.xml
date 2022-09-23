@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>hdmi_in_y_to_gs_rgb_0_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>pixel_clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>pixel_clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.PIXEL_CLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.PIXEL_CLK.FREQ_TOLERANCE_HZ">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.PIXEL_CLK.PHASE">0.0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.PIXEL_CLK.CLK_DOMAIN"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.PIXEL_CLK.ASSOCIATED_BUSIF"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_PORT</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.PIXEL_CLK.ASSOCIATED_PORT"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.PIXEL_CLK.ASSOCIATED_RESET"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.PIXEL_CLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>y_in</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="vid_io" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="vid_io_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>y_data_in</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HSYNC</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>y_hsync_in</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>VSYNC</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>y_vsync_in</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ACTIVE_VIDEO</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>y_vde_in</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>y_out</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="vid_io" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="vid_io_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>y_data_out</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HSYNC</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>y_hsync_out</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>VSYNC</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>y_vsync_out</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ACTIVE_VIDEO</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>y_vde_out</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>reset_n</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>reset_n</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.RESET_N.POLARITY">ACTIVE_LOW</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.RESET_N.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>y_data_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>y_hsync_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>y_vsync_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>y_vde_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>y_data_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">23</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>y_hsync_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>y_vsync_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>y_vde_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>pixel_clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>reset_n</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:description>y_to_gs_rgb_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">hdmi_in_y_to_gs_rgb_0_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>y_to_gs_rgb_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>8</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@c8bf387_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@310908ee_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4b108487_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6f44737_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@634eb01b_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@32ab8bf7_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@581d7acf_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@636993b6_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7a192ba2_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1e8582f3_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@197391e1_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@43ccd919_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1c2b56ce_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@85050c9_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2faeea46_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@50d79f3c_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@686faeaf_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@459a4ffa_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@494de49_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@eacf22_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@735f7792_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2b42cea1_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@346526e7_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@14c913db_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7c6a634_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1f385bdd_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6abcb1a0_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@32c838c6_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5adee22a_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5d212e2_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6825222_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5801430b_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2b793eb0_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5154116_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1ef8d13b_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1f140ecf_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1024045a_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@300e3d7b_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1b0145f7_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7b9a358c_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@717a6f79_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2b07c63f_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@730320fc_ARCHIVE_LOCATION">c:/FPGA/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@8288c1b_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@10f0f380_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@31f86209_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3e2ce219_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6572432f_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2be68af9_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7c88c747_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@42147fbd_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6da4af46_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@120e186b_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@437f881f_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@476ad02f_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@15ec001a_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@48b4db36_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d892740_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6a8cdd7b_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@77252139_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1c7cfee2_ARCHIVE_LOCATION">c:/fpga/y_to_gs_rgb/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@48a12637_ARCHIVE_LOCATION">c:/FPGA/ip/y_to_gs_rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@38038458_ARCHIVE_LOCATION">c:/FPGA/ip/y_to_gs_rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@30017730_ARCHIVE_LOCATION">c:/FPGA/ip/y_to_gs_rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1a952f8b_ARCHIVE_LOCATION">c:/FPGA/ip/y_to_gs_rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@959d82b_ARCHIVE_LOCATION">c:/FPGA/ip/y_to_gs_rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@18cc93ba_ARCHIVE_LOCATION">c:/FPGA/ip/y_to_gs_rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3e2760fd_ARCHIVE_LOCATION">c:/FPGA/ip/y_to_gs_rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@78771ea6_ARCHIVE_LOCATION">c:/FPGA/ip/y_to_gs_rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@40d061f_ARCHIVE_LOCATION">c:/FPGA/ip/y_to_gs_rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@420b6ff9_ARCHIVE_LOCATION">c:/FPGA/ip/y_to_gs_rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1c73046c_ARCHIVE_LOCATION">c:/FPGA/ip/y_to_gs_rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@401335e7_ARCHIVE_LOCATION">c:/FPGA/ip/y_to_gs_rgb</xilinx:tag>
+      </xilinx:tags>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PIXEL_CLK.ASSOCIATED_BUSIF" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PIXEL_CLK.ASSOCIATED_PORT" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PIXEL_CLK.ASSOCIATED_RESET" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PIXEL_CLK.CLK_DOMAIN" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PIXEL_CLK.FREQ_HZ" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PIXEL_CLK.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PIXEL_CLK.PHASE" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RESET_N.POLARITY" xilinx:valuePermission="bd_and_user"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2021.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="1fb4965f"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="92111c2f"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="1bc7d919"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="ea9a8489"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

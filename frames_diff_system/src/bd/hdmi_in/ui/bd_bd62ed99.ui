@@ -1,0 +1,30 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.866089",
+   "Default View_TopLeft":"-134,-187",
+   "DisplayTieOff":"1",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port M_AXI -pg 1 -lvl 4 -x 810 -y 110 -defaultsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x 0 -y 50 -defaultsOSRD
+preplace port port-id_M_ACLK -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace port port-id_M_ARESETN -pg 1 -lvl 0 -x 0 -y 190 -defaultsOSRD
+preplace port port-id_S_ACLK -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace port port-id_S_ARESETN -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace inst m00_data_fifo -pg 1 -lvl 1 -x 130 -y 70 -defaultsOSRD
+preplace inst m00_regslice -pg 1 -lvl 3 -x 670 -y 110 -defaultsOSRD
+preplace inst auto_pc -pg 1 -lvl 2 -x 390 -y 90 -defaultsOSRD
+preplace netloc S_ACLK_1 1 0 2 30 150 230J
+preplace netloc S_ARESETN_1 1 0 2 20 160 240J
+preplace netloc M_ACLK_1 1 0 3 NJ 170 NJ 170 540J
+preplace netloc M_ARESETN_1 1 0 3 NJ 190 NJ 190 550J
+preplace netloc m00_couplers_to_m00_data_fifo 1 0 1 NJ 50
+preplace netloc m00_regslice_to_m00_couplers 1 3 1 N 110
+preplace netloc m00_data_fifo_to_auto_pc 1 1 1 N 70
+preplace netloc auto_pc_to_m00_regslice 1 2 1 N 90
+levelinfo -pg 1 0 130 390 670 810
+pagesize -pg 1 -db -bbox -sgen -140 -10 910 210
+"
+}
+

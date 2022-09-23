@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>hdmi_in_rgb_video_proc_0_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>Rst</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>Rst_n</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.RST.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>PixelClk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>PixelClk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.PIXELCLK.ASSOCIATED_RESET">Rst_n:Rst</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.PIXELCLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.PIXELCLK.FREQ_TOLERANCE_HZ">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.PIXELCLK.PHASE">0.0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.PIXELCLK.CLK_DOMAIN">hdmi_in_dvi2rgb_0_0_PixelClk</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.PIXELCLK.ASSOCIATED_BUSIF"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_PORT</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.PIXELCLK.ASSOCIATED_PORT"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.PIXELCLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>rgb_in</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="vid_io" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="vid_io_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>rgb_Data_in</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HSYNC</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>rgb_HSync_in</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>VSYNC</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>rgb_VSync_in</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ACTIVE_VIDEO</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>rgb_VDE_in</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>y_out</spirit:name>
+      <spirit:displayName>Luminance output</spirit:displayName>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="vid_io" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="vid_io_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>y_Data_out</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HSYNC</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>y_HSync_out</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>VSYNC</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>y_VSync_out</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ACTIVE_VIDEO</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>y_VDE_out</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>rgb_Data_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">23</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rgb_VDE_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rgb_HSync_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rgb_VSync_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>Rst_n</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>PixelClk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>y_Data_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>y_VDE_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>y_HSync_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>y_VSync_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:description>rgb_video_proc_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">hdmi_in_rgb_video_proc_0_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>rgb_video_proc_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>19</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@22936e9f_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@211c16c0_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1108da3b_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@ab1080c_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@513b334c_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5fb53292_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7c570fc_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7952fe54_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3b2dd738_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6d8c4932_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@23a5805b_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@578e991e_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3b652920_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@18dc84ef_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@27a0f822_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e8c8b25_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@282ebab3_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@70320109_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a5548f2_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@166fe35a_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6cd94b25_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2ccc3d08_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@37e5f82a_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@66cc21d9_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3507b3d0_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3665751e_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@13c5f971_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5bd6adb_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@60b703fb_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@409a615_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@327ec428_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@71e6a42b_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d56032b_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@28c26d8e_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@c4ad534_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4d94e3e_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1f1d2861_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@60e40189_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7fdebf1d_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@14c2f417_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@57be5c27_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@79d176cb_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@35e3aecb_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@61193759_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f4b395d_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@191c84a8_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@50624ac3_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1bd2c27b_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@452d402d_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@37ba77e6_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@485548ce_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@d497926_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@36cfe155_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5b3b1937_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6c1f193e_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4c4560d8_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7dcfb62f_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@28c7371f_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1f493da0_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2d69881d_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@79d57626_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@311a40a4_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4428c6cd_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@20991e65_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@35f98b3b_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4460821a_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4c482e9b_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@402ea860_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@45dfabbe_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@45101632_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6a1af490_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6634379_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@664cf75f_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@582695b9_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1dce25ff_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2be9c940_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2653c106_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2d1d1155_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5b875883_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3af36aa4_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@de167a6_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7a2b9863_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@331d696b_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@13c586fe_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3a2cde3_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@557a21ae_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7fa5b9cf_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@335acfef_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@56a9b9da_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@70043ac4_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4bc81dfb_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@255951ed_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@56193b74_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@53f967a6_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4bf2bc5e_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@35a402b2_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5c6efe6_ARCHIVE_LOCATION">c:/projects/rgb_video_proc/rgb_video_proc.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@20772229_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3ed927cd_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@746e25b6_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4b6e4942_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3930be02_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@50e110ba_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@413eae61_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3f64cb9a_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1c737861_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@34300126_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4b6f5909_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@12b2965a_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@114825b0_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@753fbf0_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3701d88c_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@dd00325_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@9820088_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1b9672f8_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@533c0e13_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6ee8b79f_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@35f43c18_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@662c45e3_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7bd26249_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@257de8c9_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@60b207bc_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@481620c0_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@69d60a77_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3e782465_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1c16f78a_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6ab6e734_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5dc282b2_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7aaa8220_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@b92fe4e_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@32c8eb30_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1f5e13d6_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2aea7238_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@37cc374f_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1e0d4cde_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@36d573bf_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7e5f78bc_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3a742082_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6f761fe_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6cf566f4_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2c9e0c8c_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a45f120_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@686fe071_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6d1688bd_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7500900a_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@239f751c_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5475dcb7_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@593553ae_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@62f921ee_ARCHIVE_LOCATION">c:/FPGA/motion_detector/src/ip/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@46707e4e_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3cb790c_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a82088d_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@12fc6d71_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@24b7cc7b_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@59a5a3fb_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6ab54d30_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4c7672f1_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@59f44e54_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7d719e7f_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1745e81b_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@ccadcb4_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@15a5d168_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4f6ddff1_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@68d5dcf7_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6de3b348_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@525df340_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4ab1f1f5_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7a65f688_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6ac9de80_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7c6fe3e8_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@9876d0c_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@275c293b_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@300d9359_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3c5471d0_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1279cff2_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@a1e7904_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a216502_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7bde2cc5_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@10eceedd_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6485bd77_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@306c3425_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ae9f6_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e43c37e_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@222e5923_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@49024818_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@8351c82_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@57ee2d13_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4fa91303_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@337c259b_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@53bb0ec0_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ea268fd_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4803ecfe_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6392b374_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1b0e681a_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2bb1e7d5_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2565e0f5_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@464ae188_ARCHIVE_LOCATION">c:/FPGA/Zybo-hdmi-in-master/repo/vivado-library/xilinx.com_user_rgb_video_proc_1.0</xilinx:tag>
+      </xilinx:tags>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PIXELCLK.ASSOCIATED_BUSIF" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PIXELCLK.ASSOCIATED_PORT" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PIXELCLK.ASSOCIATED_RESET" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PIXELCLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PIXELCLK.FREQ_HZ" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PIXELCLK.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.PIXELCLK.PHASE" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RST.POLARITY" xilinx:valuePermission="bd_and_user"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2021.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="5aa88a11"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="5ad4c025"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="9af25fd9"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="da2e8567"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>
